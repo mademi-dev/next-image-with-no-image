@@ -1,0 +1,33 @@
+{
+  "name": "next-image-with-no-image",
+  "version": "1.0.0",
+  "description": "This is an enhanced Next Image component to improvement handling when we haven't image data.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mademi-dev/next-image-with-no-image.git"
+  },
+  "keywords": [
+    "image",
+    "noimage",
+    "no-image"
+  ],
+  "author": "MADEMI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mademi-dev/next-image-with-no-image/issues"
+  },
+  "homepage": "https://github.com/mademi-dev/next-image-with-no-image#readme",
+  "dependencies": {
+    "next": "^12.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
