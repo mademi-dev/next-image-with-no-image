@@ -1,6 +1,6 @@
 {
   "name": "next-image-with-no-image",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is an enhanced Next Image component to improvement handling when we haven't image data.",
   "main": "index.ts",
   "scripts": {
