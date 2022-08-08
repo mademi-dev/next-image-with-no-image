@@ -1,3 +1,4 @@
+import React from 'react';
 import NextImage from 'next/image';
 
 declare const VALID_LAYOUT_VALUES: readonly [
@@ -61,7 +62,7 @@ export default function Image({
       ) : (
         <>
           {showNoImage && (
-            <Image {...{
+            <NextImage {...{
               src: src ? src : '/images/no-image.jpg',
               alt,
               width,
