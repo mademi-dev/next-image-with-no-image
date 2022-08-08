@@ -62,12 +62,12 @@
   "bugs": {
     "url": "https://github.com/mui/material-ui/issues"
   },
-  "homepage": "https://github.com/mademi-dev/next-image-with-no-image#readme",Z
+  "homepage": "https://github.com/mademi-dev/next-image-with-no-image#readme",
   "peerDependencies": {
     "@types/react": "^17.0.0 || ^18.0.0",
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0",
-    "next": "^12.2.4",
+    "next": "^12.2.4"
   },
   "peerDependenciesMeta": {
     "@types/react": {
