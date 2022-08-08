@@ -59,9 +59,6 @@
     "url": "https://github.com/mademi-dev/next-image-with-no-image/issues"
   },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mui/material-ui/issues"
-  },
   "homepage": "https://github.com/mademi-dev/next-image-with-no-image#readme",
   "peerDependencies": {
     "@types/react": "^17.0.0 || ^18.0.0",
