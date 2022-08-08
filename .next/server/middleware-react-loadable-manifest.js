@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST={"index.tsx -> ../index":{id:758,files:["static/chunks/framework-04ddd8531adaac77.js","static/chunks/758.09770b4e842549b3.js"]}};

@@ -10,6 +10,13 @@ declare const VALID_LAYOUT_VALUES: readonly [
 ];
 declare type LayoutValue = typeof VALID_LAYOUT_VALUES[number];
 
+declare const VALID_LOADING_VALUES: readonly [
+   'lazy' , 
+   'eager' ,
+    undefined
+];
+declare type LoadingValue = typeof VALID_LOADING_VALUES[number];
+
 declare const VALID_OBJECTFIT_VALUES: readonly [
   'contain',
   'cover',
@@ -24,7 +31,7 @@ declare const VALID_OBJECTFIT_VALUES: readonly [
 ];
 declare type ObjectFitValue = typeof VALID_OBJECTFIT_VALUES[number];
 
-export default function Image({
+const Image = ({
   src,
   width = 160,
   height = 90,
@@ -34,7 +41,8 @@ export default function Image({
   className,
   priority = false,
   showNoImage = false,
-}: {
+  loading='lazy',
+} : {
   src?: string | undefined | null,
   width?: number | string,
   height?: number | string,
@@ -44,9 +52,10 @@ export default function Image({
   className?: string,
   priority?: boolean,
   showNoImage?: boolean,
-}) {
+  loading?: LoadingValue,
+}) => {
   return (
-    <>
+    <React.Fragment>
       {src ? (
         <NextImage {...{
           src,
@@ -54,7 +63,7 @@ export default function Image({
           width,
           height,
           layout,
-          loading: 'lazy',
+          loading,
           priority,
           objectFit,
           className, 
@@ -74,6 +83,7 @@ export default function Image({
           )}
         </>
       )}
-    </>
+    </React.Fragment>
   );
 }
+export default Image;
