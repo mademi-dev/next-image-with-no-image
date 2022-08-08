@@ -5,4 +5,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'image.bundle.js',
   },
+  module: {
+    rules: [{ test: /\.txt$/, use: 'raw-loader' }],
+  },
 };
